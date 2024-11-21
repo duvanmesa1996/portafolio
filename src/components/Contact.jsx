@@ -34,16 +34,16 @@ const Contact = () => {
         <motion.button
       type="submit"
       whileHover={{
-        scale: 1.1, // Agrandar al pasar el mouse
-        backgroundColor: "#4A90E2", // Cambiar color
-        borderColor: "#fff", // Cambiar color del borde
+        scale: 1.1, 
+        backgroundColor: "#4A90E2", 
+        borderColor: "#fff", 
       }}
       whileTap={{
-        scale: 0.95, // Reducir tamaño al hacer clic
-        backgroundColor: "#3b82f6", // Cambiar a un azul más oscuro
+        scale: 0.95, 
+        backgroundColor: "#3b82f6", 
       }}
       transition={{
-        type: "spring", // Efecto de rebote
+        type: "spring", 
         stiffness: 300,
         damping: 15,
       }}

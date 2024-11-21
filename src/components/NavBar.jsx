@@ -4,8 +4,6 @@ import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // Enlaces de navegación
   const links = [
     { link: "about", label: "About", id: 1 },
     { link: "trabajos", label: "Trabajos", id: 2 },
@@ -21,24 +19,20 @@ const NavBar = () => {
           : "items-center justify-around flex flex-col z-[300] fixed w-screen h-screen bg-blue-300"
       }`}
     >
-      {/* Renderizamos el componente Menu */}
       <Menu
         isMenuOpen={isMenuOpen}
-        handleMenu={() => setIsMenuOpen(!isMenuOpen)} // Alternamos el estado de abierto/cerrado
+        handleMenu={() => setIsMenuOpen(!isMenuOpen)}
       />
-
-      {/* Solo mostramos los enlaces si el menú está abierto */}
       {isMenuOpen &&
         links.map((l) => (
           <Link
             key={l.id}
-            to={l.link} // 'to' es el id de la sección
+            to={l.link} 
             className="text-[30px] text-blue-800 cursor-pointer"
-            onClick={() => setIsMenuOpen(false)} // Cierra el menú al hacer clic
+            onClick={() => setIsMenuOpen(false)} 
             smooth={true}
-            duration={500}
-          >
-            {l.label} {/* Mostrar el nombre del enlace */}
+            duration={500}          >
+            {l.label} 
           </Link>
         ))}
     </div>

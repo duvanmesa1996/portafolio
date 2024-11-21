@@ -33,7 +33,7 @@ const Projects = () => {
       <div className="gap-8 mt-10 grid grid-cols-1 md:grid-cols-3">
         {projects.map((p, index) => (
           <div
-            key={index} // Clave única para cada elemento
+            key={index}
             className="relative w-[200px] h-[200px] border p-2 bg-slate-500"
           >
             <img

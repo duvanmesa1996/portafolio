@@ -13,17 +13,17 @@ const About = () => {
       <motion.div
         className="w-4/5 md:w-3/5 lg:w-2/5 text-center bg-[#16213e] rounded-lg shadow-lg p-8"
         initial={{
-          borderColor: "#16213e", // Color inicial del borde
-          borderWidth: "2px", // Grosor inicial del borde
+          borderColor: "#16213e", 
+          borderWidth: "2px", 
         }}
         animate={{
-          borderColor: ["#4A90E2", "#50C878", "#F1C40F", "#4A90E2"], // Colores del borde en secuencia
-          borderWidth: ["2px", "4px", "6px", "4px", "2px"], // Variación del grosor
+          borderColor: ["#4A90E2", "#50C878", "#F1C40F", "#4A90E2"], 
+          borderWidth: ["2px", "4px", "6px", "4px", "2px"], 
         }}
         transition={{
-          duration: 4, // Duración de toda la animación
-          repeat: Infinity, // Repetición infinita
-          ease: "easeInOut", // Transiciones suaves
+          duration: 4, 
+          repeat: Infinity, 
+          ease: "easeInOut", 
         }}
       >
         <p className="text-base md:text-lg">

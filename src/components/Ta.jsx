@@ -1,6 +1,6 @@
 const Ta = () => {
-    return <div>Hola desde Ta</div>;
+    return <div></div>;
   };
   
-  export default Ta; // Asegúrate de incluir esta línea
+  export default Ta;
   

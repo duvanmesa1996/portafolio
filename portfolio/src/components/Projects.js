@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section className="mb-8">
       <h2 className="text-xl font-bold mb-2">Proyectos</h2>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 border border-color-blue-600">
         {projects.map((project, index) => (
           <div
             key={index}
